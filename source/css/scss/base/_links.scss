@@ -1,0 +1,29 @@
+/* Links */ 
+a {
+/*	color: $gray-dark;*/
+	text-decoration: none;
+	outline: 0;
+	
+/*	&:hover, &:focus {
+		color: $gray;
+	}*/
+}
+
+@mixin linx ($color-link, $color-visited, $color-hover, $color-active) {
+  a {
+    color: $color-link;
+    &:visited {
+      color: $color-visited;
+    }
+    &:hover {
+      color: $color-hover;   
+    }
+    &:active {
+      color: $color-link;
+    }
+  }
+}
+
+body {
+  @include linx (#0071bc, #4c2c92, #205493, #205493);
+}

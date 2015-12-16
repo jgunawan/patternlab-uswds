@@ -1,0 +1,325 @@
+// Color
+$color-primary:              #0071bc; 
+$color-primary-darker:       #205493;
+$color-primary-darkest:      #112e51;
+
+$color-primary-alt:          #02bfe7;
+$color-primary-alt-dark:     #00a6d2;
+$color-primary-alt-darkest:  #046b99;
+$color-primary-alt-light:    #9bdaf1; // lighten($color-primary-alt, 60%)
+$color-primary-alt-lightest: #e1f3f8; // lighten($color-primary-alt, 90%)
+
+$color-secondary:            #e31c3d;
+$color-secondary-dark:       #cd2026;
+$color-secondary-darkest:    #981b1e;
+$color-secondary-light:      #e59393; // lighten($color-secondary, 60%)
+$color-secondary-lightest:   #f9dede; // lighten($color-secondary, 90%)
+
+$color-white:                #ffffff;
+$color-base:                 #212121;
+
+$color-gray-dark:            #323a45;
+$color-gray:                 #5b616b; // lighten($color-gray-dark, 20%)
+$color-gray-light:           #aeb0b5; // lighten($color-gray-dark, 60%)
+$color-gray-lighter:         #d6d7d9; // lighten($color-gray-dark, 80%)
+$color-gray-lightest:        #f1f1f1; // lighten($color-gray-dark, 91%)
+
+$color-gray-warm-dark:       #494440;
+$color-gray-warm-light:      #e4e2e0; // lighten($color-gray-warm-dark, 90%)
+$color-gray-cool-light:      #dce4ef; // lighten($color-primary, 90%)
+
+$color-gold:                 #fdb81e;
+$color-gold-light:           #f9c642; //  lighten($color-gold, 20%)
+$color-gold-lighter:         #fad980; //  lighten($color-gold, 60%)
+$color-gold-lightest:        #fff1d2; //  lighten($color-gold, 83%)
+
+$color-green:                #2e8540;  
+$color-green-light:          #4aa564; // lighten($color-green, 20%)
+$color-green-lighter:        #94bfa2; // lighten($color-green, 60%)
+$color-green-lightest:       #e7f4e4; // lighten($color-green, 60%)
+
+$color-cool-blue:            #205493;
+$color-cool-blue-light:      #4773aa; // lighten($color-cool-blue, 20%)
+$color-cool-blue-lighter:    #8ba6ca; // lighten($color-cool-blue, 60%)
+$color-cool-blue-lightest:   #dce4ef; // lighten($color-cool-blue, 90%)
+
+$color-link:                 #0071bc;
+$color-focus:                #205493;
+$color-hover:                #205493;
+$color-active:               #205493;
+$color-visited:              #4c2c92;
+
+.usa-color-outline .usa-color-text {
+    box-shadow: inset 0 0 0 1px #5b616b;
+}
+
+.usa-color-text {
+    font-weight: 400;
+    margin-bottom: .4rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+@mixin text-color($text_color) {
+  color: $text_color;
+}
+
+.usa-color-text-primary-darkest {
+	@include text-color($color-primary-darkest);
+}
+
+.usa-color-text-primary-darker {
+	@include text-color($color-primary-darker);
+}
+
+.usa-color-text-primary {
+	@include text-color($color-primary)
+}
+
+.usa-color-text-cool-blue-light {
+	@include text-color($color-cool-blue-light);
+}
+
+.usa-color-text-primary-alt-darkest {
+	@include text-color($color-primary-alt-darkest);
+}
+
+.usa-color-text-green {
+	@include text-color($color-green);
+}
+
+.usa-color-text-visited {
+	@include text-color($color-visited);
+}
+
+.usa-color-text-base {
+	@include text-color($color-base);
+}
+
+.usa-color-text-gray-dark {
+	@include text-color($color-gray-dark);
+}
+
+.usa-color-text-gray {
+	@include text-color($color-gray);
+}
+
+.usa-color-text-gray-warm-dark {
+	@include text-color($color-gray-warm-dark);
+}
+
+.usa-color-text-secondary-darkest {
+	@include text-color($color-secondary-darkest);
+}
+
+.usa-color-text-secondary-dark {
+	@include text-color($color-secondary-dark);
+}
+
+.usa-color-text-secondary {
+	@include text-color($color-secondary);
+}
+
+.usa-color-text-white {
+	@include text-color($color-white);
+}
+
+.usa-background-dark {
+	@include text-color($color-white);
+	a {
+		@include text-color($color-gray-lighter);
+		&:hover {
+			@include text-color($color-white);
+		}
+		&:visited {
+			@include text-color($color-gray-lighter);
+		}
+	}
+}
+
+@mixin bg-color($bg_color) {
+  background-color: $bg_color;
+}
+
+.usa-color-base {
+	@include bg-color($color-base);
+}
+
+.usa-color-gray-warm-dark {
+	@include bg-color($color-gray-warm-dark);
+}
+
+.usa-color-gray-dark {
+	@include bg-color($color-gray-dark);
+}
+
+.usa-color-gray {
+	@include bg-color($color-gray);
+}
+
+.usa-color-primary-darkest {
+	@include bg-color($color-primary-darkest);
+}
+
+.usa-color-primary-darker {
+	@include bg-color($color-primary-darker);
+}
+
+.usa-color-primary {
+	@include bg-color($color-primary);
+}
+
+.usa-color-cool-blue-light {
+	@include bg-color($color-cool-blue-light);
+}
+
+.usa-color-primary-alt-darkest {
+	@include bg-color($color-primary-alt-darkest);
+}
+
+.usa-color-primary-alt-dark {
+	@include bg-color($color-primary-alt-dark);
+}
+
+.usa-color-primary-alt {
+	@include bg-color($color-primary-alt);
+}
+
+.usa-color-green {
+	@include bg-color($color-green);
+}
+
+.usa-color-green-light {
+	@include bg-color($color-green-light);
+}
+
+.usa-color-gold {
+	@include bg-color($color-gold);
+}
+
+.usa-color-gold-light {
+	@include bg-color($color-gold-light);
+}
+
+.usa-color-secondary-darkest {
+	@include bg-color($color-secondary-darkest);
+}
+
+.usa-color-secondary-dark {
+	@include bg-color($color-secondary-dark);
+}
+
+.usa-color-secondary {
+	@include bg-color($color-secondary);
+}
+
+.usa-color-gray-light {
+	@include bg-color($color-gray-light);
+}
+
+.usa-color-gray-lighter {
+	@include bg-color($color-gray-lighter);
+}
+
+.usa-color-gray-warm-light {
+	@include bg-color($color-gray-warm-light);
+}
+
+.usa-color-cool-blue-lighter {
+	@include bg-color($color-cool-blue-lighter);
+}
+
+.usa-color-cool-blue-lightest {
+	@include bg-color($color-cool-blue-lightest);
+}
+
+.usa-color-primary-alt-lightest {
+	@include bg-color($color-primary-alt-lightest);
+}
+
+.usa-color-green-lighter {
+	@include bg-color($color-green-lighter);
+}
+
+.usa-color-green-lightest {
+	@include bg-color($color-green-lightest);
+}
+
+.usa-color-gold-lighter {
+	@include bg-color($color-gold-lighter);
+}
+
+.usa-color-gold-lightest {
+	@include bg-color($color-gold-lightest);
+}
+
+.usa-color-secondary-lightest {
+	@include bg-color($color-secondary-lightest);
+}
+
+.usa-background-dark {
+	@include bg-color($color-gray-dark)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

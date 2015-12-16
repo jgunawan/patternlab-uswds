@@ -1,0 +1,141 @@
+.usa-color-outline .usa-color-text {
+    box-shadow: inset 0 0 0 1px #5b616b;
+}
+
+.usa-color-text {
+    font-weight: normal;
+    margin-bottom: .4rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+@mixin text-color($text_color) {
+  color: $text_color;
+}
+
+.usa-color-text-primary-darkest {
+	@include text-color($color-primary-darkest);
+}
+
+.usa-color-text-primary-darker {
+	@include text-color($color-primary-darker);
+}
+
+.usa-color-text-primary {
+	@include text-color($color-primary)
+}
+
+.usa-color-text-cool-blue-light {
+	@include text-color($color-cool-blue-light);
+}
+
+.usa-color-text-primary-alt-darkest {
+	@include text-color($color-primary-alt-darkest);
+}
+
+.usa-color-text-green {
+	@include text-color($color-green);
+}
+
+.usa-color-text-visited {
+	@include text-color($color-visited);
+}
+
+.usa-color-text-base {
+	@include text-color($color-base);
+}
+
+.usa-color-text-gray-dark {
+	@include text-color($color-gray-dark);
+}
+
+.usa-color-text-gray {
+	@include text-color($color-gray);
+}
+
+.usa-color-text-gray-warm-dark {
+	@include text-color($color-gray-warm-dark);
+}
+
+.usa-color-text-secondary-darkest {
+	@include text-color($color-secondary-darkest);
+}
+
+.usa-color-text-secondary-dark {
+	@include text-color($color-secondary-dark);
+}
+
+.usa-color-text-secondary {
+	@include text-color($color-secondary);
+}
+
+.usa-color-text-white {
+	@include text-color($color-white);
+}
+
+@mixin bg-color($bg_color) {
+  background-color: $bg_color;
+}
+
+.usa-color-base {
+	@include bg-color($color-base);
+}
+
+.usa-color-gray-warm-dark {
+	@include bg-color($color-gray-warm-dark);
+}
+
+.usa-color-gray-dark {
+	@include bg-color($color-gray-dark);
+}
+
+.usa-color-gray {
+	@include bg-color($color-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
